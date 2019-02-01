@@ -1,3 +1,3 @@
-module Railspack
+module Railspacker
   VERSION = '0.1.0'
 end

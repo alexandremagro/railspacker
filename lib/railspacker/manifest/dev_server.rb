@@ -1,6 +1,6 @@
 require 'net/http'
 
-module Railspack::Manifest
+module Railspacker::Manifest
   class DevServer < Struct.new(:url, keyword_init: true)
     def load
       uri = URI("#{url}/manifest.json")

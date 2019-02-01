@@ -1,14 +1,14 @@
 $:.push File.expand_path("lib", __dir__)
 
-require "railspack/version"
+require "railspacker/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "railspack"
-  spec.version     = Railspack::VERSION
+  spec.name        = "railspacker"
+  spec.version     = Railspacker::VERSION
   spec.authors     = ["Alexandre Magro"]
   spec.email       = ["alexandremagro@live.com"]
-  spec.homepage    = "https://github.com/alexandremagro/railspack"
-  spec.summary     = "Railspack is an alternative to Webpacker"
+  spec.homepage    = "https://github.com/alexandremagro/railspacker"
+  spec.summary     = "Railspacker is an alternative to Webpacker"
   spec.license     = "MIT"
   spec.files       = Dir[
     "{bin,lib}/**/*",

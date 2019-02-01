@@ -1,6 +1,6 @@
-module Railspack::Helper
+module Railspacker::Helper
   def pack_path(name)
-    manifest = Railspack.manifest.load
+    manifest = Railspacker.manifest.load
 
     if manifest.nil?
       raise "manifest.json not found."
@@ -10,6 +10,6 @@ module Railspack::Helper
       raise "Pack not found in manifest.json: #{name}"
     end
     
-    [Railspack.manifest.path_to, manifest[name]].join('/')
+    [Railspacker.manifest.path_to, manifest[name]].join('/')
   end
 end
