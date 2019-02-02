@@ -1,5 +1,8 @@
-# `build` script will run before the `assets:precompile` task
+# Script that will run run before the `assets:precompile` task
 # Railspacker.before_assets_precompile_script = 'build'
+
+# Change this if you need change output path returned by manifest.json
+# Railspacker.source = ->(filename) { filename }
 
 Railspacker.manifest = case Rails.env
 when 'development'

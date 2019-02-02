@@ -7,9 +7,5 @@ module Railspacker::Manifest
 
       JSON.parse Net::HTTP.get(uri)
     end
-
-    def path_to
-      url
-    end
   end
 end

@@ -10,8 +10,8 @@ module Railspacker
       if !manifest.key?(name)
         raise "Pack not found in manifest.json: #{name}"
       end
-      
-      [Railspacker.manifest.path_to, manifest[name]].join('/')
+
+      Railspacker.source.call(manifest[name])
     end
   end
 end

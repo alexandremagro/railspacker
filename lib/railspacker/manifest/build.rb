@@ -5,9 +5,5 @@ module Railspacker::Manifest
 
       JSON.parse File.read(file)
     end
-
-    def path_to
-      Pathname.new('/').join(public_path)
-    end
   end
 end
